@@ -67,7 +67,7 @@ void loop() {
         }
       }
       analogWrite(LEDOUT, fadeBrightness);
-      if(blinkCount > NUM_BLINKS) {
+      if(blinkCount >= NUM_BLINKS) {
         mode = MODE_LOCKOUT;
       }
     }
